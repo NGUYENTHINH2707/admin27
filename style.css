@@ -1,0 +1,204 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+#header_logo img{
+    width: 160px;
+    height: auto;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header_nav ul{
+    list-style: none;
+    display: flex;
+    padding-right: 50px;
+}
+#header_nav ul a{
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: flex;
+}
+#header_nav ul span{
+    margin-left: 5px;
+    margin-top: 4px;
+    font-size: 22px;
+}
+
+#slider img{
+    width: 100%;
+    height: auto;
+}
+#header_nav ul button{
+    font-size: 20px;
+    color: black;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+#header_nav{
+    display: flex;
+}
+/* bài viết */
+.post {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.post li{
+    width: 22%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.post li img{
+    width: 100%;
+}
+.post li a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.post li h4{
+    font-size: 25px;
+    text-align: justify;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 0 5px;
+}
+.post li p{
+    padding: 0 5px;
+    text-align: justify;
+}
+.post li span{
+    display: block;
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 8px;
+    padding: 0 5px;
+}
+.post li div > span > span{
+    display: inline-block;
+}
+.post li div{
+    display: flex;
+    justify-content: space-between;
+}
+/* #header_nav ul a:nth-child(1) li::before {
+    content: url(./img/iconhome.svg); 
+
+}
+#header_nav ul a:nth-child(2) li::before {
+    content: url(./img/poision.svg); 
+
+}
+#header_nav ul a:nth-child(3) li::before {
+    content: url(./img/book.svg); 
+
+}
+#header_nav ul a:nth-child(4) li::before {
+    content: url(./img/iconhome.svg); 
+
+} */
+#header_nav ul a:nth-child(1) span{
+    color: cornflowerblue;
+}
+#header_nav ul a:nth-child(2) span{
+    color: violet;
+}
+#header_nav ul a:nth-child(3) span{
+    color: burlywood;
+}
+#header_nav ul a:nth-child(4) span{
+    color: indianred;
+}
+.owl-carousel {
+    position: relative;
+}
+.owl-prev {
+    position: absolute;
+    top: 50%;
+    left :20px;
+}
+.owl-next {
+    position: absolute;
+    top: 50%;
+    right :20px;
+}
+.box-title{
+    background-color: red;
+    color: white;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 30px 5px 10px;
+    border-radius: 0px 20px 0px 0px;
+}
+.products li {
+    width: 22%;
+    margin-bottom:60px ;
+}
+.products li img{
+    width: 100%;
+}
+.products li h4{
+    font-size: 25px;
+    text-align: justify;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 0 5px;
+}
+.products li span{
+    display: block;
+    color: red;
+    padding: 0 5px;
+}
+.products li button{
+    width: 100%;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 0px;
+    text-transform: uppercase ;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.products {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.fanpage{
+    width: 30%;
+}
+.fanpage p{
+    text-align: justify;
+    font-style: italic;
+    color: gray;
+}
+.call a{
+    display: block;
+    text-decoration: none;
+    margin-bottom   : 15px;
+    color: black;
+
+}
+.copy-right{
+    background-color: green;
+    color: white;
+    padding: 10px 0px;
+    font-size: 12px;
+    text-align: center  ;
+}

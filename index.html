@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+</head>
+
+<body>
+
+    <Style>
+        body{
+            position: relative;
+        }
+
+       #canvas{
+           position: absolute;
+           z-index: 20;
+       }
+    </Style>
+
+    <canvas id="canvas"></canvas>
+
+
+    <div id="wrapper">
+        <div id="header">
+            <div id="header_logo">
+                <img src="/img/tipy.png" alt="">
+            </div>
+
+            <div id="header_nav">
+                <ul>
+                    <a href="">
+                        <span class="material-symbols-outlined">
+                            home
+                        </span>
+                        <li>Trang chủ</li>
+                    </a>
+                    <a href="">
+                        <span class="material-symbols-outlined">
+                            psychiatry
+                        </span>
+                        <li>Dược liệu</li>
+                    </a>
+                    <a href="">
+                        <span class="material-symbols-outlined">
+                            feed
+                        </span>
+                        <li>Tin tức</li>
+                    </a>
+                    <a href="">
+                        <span class="material-symbols-outlined">
+                            chat
+                        </span>
+                        <li>Liên hệ</li>
+                    </a>
+                </ul>
+                <!-- <ul>
+                    <button>
+                        <li>Đăng nhập</li>
+                    </button>
+                    <button>    
+                        <li>Đăng ký</li>
+                    </button>
+                </ul> -->
+
+            </div>
+        </div>
+
+        <!-- <div id="slider">
+            <a href="">
+                <img src="./img/tra-ca-gai-leo-1.jpg" alt="">
+            </a>
+
+        </div> -->
+
+        <div class="slider">
+            <div>
+                <img src="./img/slide1.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/slide1.jpg" alt="">
+            </div>
+            <div>
+                <img src="./img/slide2.jpg" alt="">
+            </div>
+            <div>
+                <img src="./img/slide3.jpg" alt="">
+            </div>
+
+        </div>
+
+        <section style="margin-top: 30px ;">
+            <h2 class="box-title">Tin nổi bật</h2>
+
+            <ul class="post">
+                <li>
+                    <a href="">
+                        <img src="https://www.vinmec.com/s3-images/20230220_081708_194448_cay-noc-soi.max-800x800.jpg"
+                            alt="">
+                        <h4>Tác dụng của cây nọc sởi</h4>
+                        <p>Những thói quen hàng ngày tốt cho gan, Gan đa nhiệm và cần mẫn như...</p>
+                        <div>
+                            <span><span class="material-symbols-outlined">
+                                    schedule
+                                </span> 17/12/2023</span>
+                            <span><span class="material-symbols-outlined">
+                                    post_add
+                                </span> Nguyễn Tiến Thịnh</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://www.vinmec.com/s3-images/20230218_083137_759077_hoa-mao-ga.max-800x800.jpg"
+                            alt="">
+                        <h4>Cây hoa mào gà chữa bệnh gì?</h4>
+                        <p>Những thói quen hàng ngày tốt cho gan, Gan đa nhiệm và cần mẫn như...</p>
+                        <div>
+                            <span><span class="material-symbols-outlined">
+                                    schedule
+                                </span> 17/12/2023</span>
+                            <span><span class="material-symbols-outlined">
+                                    post_add
+                                </span> Nguyễn Tiến Thịnh</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://www.vinmec.com/s3-images/20230219_091104_586754_cay-mong-quy.max-800x800.jpg"
+                            alt="" style="height: 226px;">
+                        <h4>Cỏ bấc đèn có tác dụng gì?</h4>
+                        <p>Những thói quen hàng ngày tốt cho gan, Gan đa nhiệm và cần mẫn như...</p>
+                        <div>
+                            <span><span class="material-symbols-outlined">
+                                    schedule
+                                </span> 17/12/2023</span>
+                            <span><span class="material-symbols-outlined">
+                                    post_add
+                                </span> Nguyễn Tiến Thịnh</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://www.vinmec.com/s3-images/20230215_020628_255801_cay-le-duong.max-800x800.jpg"
+                            alt="" style="height: 226px;">
+                        <h4>Nhục Quế có tác dụng gì?</h4>
+                        <p>Những thói quen hàng ngày tốt cho gan, Gan đa nhiệm và cần mẫn như...</p>
+                        <div>
+                            <span><span class="material-symbols-outlined">
+                                    schedule
+                                </span> 17/12/2023</span>
+                            <span><span class="material-symbols-outlined">
+                                    post_add
+                                </span> Nguyễn Tiến Thịnh</span>
+                        </div>
+                    </a>
+                </li>
+
+
+
+            </ul>
+
+        </section>
+    </div>
+
+
+    <section style="margin-top: 60px ;">
+        <h2 class="box-title" style="background-color: green;">Sản phẩm</h2>
+
+        <ul class="products">
+            <li>
+                <img src="https://duoclieupumat.com/wp-content/uploads/2018/09/658430eaad34626a3b25-800x800.jpg"
+                    alt="">
+               <h4>Trà túi lọc Giảo cổ lam Pù Mát -Trà dược liệu túi lọc</h4>
+                <span>Giá : 450.000đ</span>
+                <a href="">
+                    <button style="background-color: indianred;">Xem thêm</button>
+                </a>
+            </li>
+            <li>
+                <img src="https://duoclieupumat.com/wp-content/uploads/2021/03/duoclieu-pumat-cao-d%C3%A2y-th%C3%ACa-canh-3-800x800.jpg"
+                    alt="">
+                <h4>Cao Dây thìa canh Pù Mát</h4>
+                <span>Giá : 450.000đ</span>
+                <a href="">
+                    <button>Xem thêm</button>
+                </a>
+            </li>
+            <li>
+                <img style="height: 317.43px;"
+                    src="https://duoclieupumat.com/wp-content/uploads/2023/11/mang-kho-1-800x842.jpg" alt="">
+                <h4>Măng khô Pá Ké</h4>
+                <span>Giá : 70.000đ</span>
+                <a href="">
+                    <button>Xem thêm</button>
+                </a>
+            </li>
+            <li>
+                <img style="height: 317.43px;"
+                    src="https://duoclieupumat.com/wp-content/uploads/2023/11/mat-ong-800x655.jpg" alt="">
+                <h4>Mật ong Pá Ké</h4>
+                <span>Giá : 70.000đ</span>
+                <a href="">
+                    <button>Xem thêm</button>
+                </a>
+            </li>
+            <li>
+                <img src="https://duoclieupumat.com/wp-content/uploads/2021/11/duoclieu-pumat-tr%C3%A0-h%C3%B2a-c%C3%A0-gai-leo-1-800x799.jpg"
+                    alt="">
+                <h4>Trà hòa tan cà gai leo Pù Mát</h4>
+                <span>Giá : 130.000đ</span>
+                <a href="">
+                    <button>Xem thêm</button>
+                </a>
+            </li>
+            <li>
+                <img src="https://duoclieupumat.com/wp-content/uploads/2021/11/duoclieu-pumat-tr%C3%A0-h%C3%B2a-tan-d%C3%A2y-th%C3%ACa-canh-2-800x801.jpg"
+                    alt="">
+                <h4>Trà hòa tan dây thìa canh Pù Mát</h4>
+                <span>Giá : 130.000đ</span>
+                <a target="_blank" href="chitietsanpham.html">
+                    <button>Xem thêm</button>
+                </a>
+            </li>
+            <li>
+                <img style="height: 317.81px;"
+                    src="https://duoclieupumat.com/wp-content/uploads/2022/12/TRATUILOCANTHAN-800x643.jpg" alt="">
+                <h4>TRÀ TÚI LỌC AN THẦN PÙ MÁT</h4>
+                <span>Giá : 98.000đ</span>
+                <a href="">
+                    <button>Xem thêm</button>
+                </a>
+            </li>
+            <li>
+                <img style="height: 317.81px;"
+                    src="https://duoclieupumat.com/wp-content/uploads/2022/03/Ca-gai-leo-duoc-lieu-pu-mat-2-800x538.jpg"
+                    alt="">
+                <h4>Trà Túi Lọc Cà Gai Leo Pù Mát </h4>
+                <span>Giá : 89.000đ</span>
+                <a href="">
+                    <button>Xem thêm</button>
+                </a>
+            </li>
+        </ul>
+
+    </section>
+
+    <div class="footer" style="margin-top: 50px;">
+        <div class="fanpage">
+            <!-- <div class="fb-page" data-href="https://www.facebook.com/TIPY.EDUCATION" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/TIPY.EDUCATION" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/TIPY.EDUCATION">Trung tâm đào tạo công nghệ TIPY STEM</a></blockquote></div> -->
+            <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=61555866508356" data-tabs=""
+                data-width="" data-height="" data-small-header="true" data-adapt-container-width="false"
+                data-hide-cover="false" data-show-facepile="false">
+                <blockquote cite="https://www.facebook.com/profile.php?id=61555866508356" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/profile.php?id=61555866508356">Nguyễn Tiến Thịnh</a></blockquote>
+            </div>
+
+            <h3>Trung tâm đào tạo công nghệ TIPY STEM </h3>
+            <p>Vì sự phát triển toàn diện của trẻ Tâm sáng - Trí khôn - Thể cường. Chúng tôi quyết tâm nỗ lực phụng sự,
+                kiến tạo nên thế hệ trẻ "Am tường về kiến thức - Tinh thông về xã hội - Giàu mạnh về kỹ năng và Tâm thế
+                sẵn sàng hội nhập, hướng nghiệp sớm thành tài"</p>
+        </div>
+
+        <div>
+            <h3>CƠ SỞ</h3>
+            <p>Tại Vinh: Số 146 Nguyễn Sỹ Sách, Vinh</p>
+            <p>Tại Hà Tĩnh: Số 6 Ngô Đức Kế, TP Hà Tĩnh</p>
+            <p>Tại Quỳnh Lưu: Comming soon</p>
+            <p>Tại Bình Phước: Phước Long, Bình Phước</p>
+        </div>
+
+        <div class="call">
+            <h3>LIÊN HỆ</h3>
+            <a href="">Về chúng tôi</a>
+            <a href="">Điều khoản và điều kiện</a>
+            <a href="">Chính sách bảo mật</a>
+        </div>
+
+
+    </div>
+
+    <div class="copy-right">
+        COPYRIGHT © 2023 TRUNG TÂM ĐÀO TẠO CÔNG NGHỆ TIPY STEM
+    </div>
+
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v18.0"
+        nonce="AF9v4sbT">
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                nav: true,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    }
+                }
+            });
+        });
+
+
+
+        var canvas = document.getElementById("canvas"),
+            ctx = canvas.getContext("2d"),
+            things = [],
+            thingsCount = 124,
+            mouse = {
+                x: -100,
+                y: -100
+            },
+            minDist = 150;
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        // object image
+        var image = new Image();
+        //image.src = 'https://i.pinimg.com/originals/90/2c/2b/902c2bbccb72ca76cf3bbe95741174e9.png';
+        // image.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Love_heart_uidaodjsdsew.gif/1200px-Love_heart_uidaodjsdsew.gif';
+        // image.src = 'https://static.wixstatic.com/media/2cd43b_57438aebde5a4b0fa20c6880a9fafabf~mv2.png/v1/fill/w_320,h_272,fp_0.50_0.50/2cd43b_57438aebde5a4b0fa20c6880a9fafabf~mv2.png';
+
+        image.src =  'https://png.pngtree.com/png-vector/20231213/ourmid/pngtree-beautiful-peach-blossom-petals-scattered-ai-elements-three-dimensional-buckle-free-png-image_11330495.png';
+
+
+        for (var i = 0; i < thingsCount; i++) {
+            let thingWidth = Math.floor(Math.random() * 20) + 20;
+            let thingHeight = image.naturalHeight / image.naturalWidth * thingWidth;
+            let speed = Math.floor(Math.random() * 2) + 0.5;
+            things.push({
+                width: thingWidth,
+                height: thingHeight,
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height - thingHeight,
+                speed: speed,
+                vY: speed,
+                vX: 0,
+                d: Math.random() * 1.2 - 0.6,
+                stepSize: (Math.random()) / 20,
+                step: 0,
+                angle: Math.random() * 180 - 90,
+                rad: Math.floor(Math.random()),
+                opacity: Math.random() + 0.4,
+                _ratate: Math.floor(Math.random()) // ratate 正負
+            });
+        }
+
+
+        function drawThings() {
+            things.map((thing) => {
+                ctx.beginPath();
+                thing.rad = (thing.angle * Math.PI) / 180;
+                ctx.save();
+                var cx = thing.x + thing.width / 2;
+                var cy = thing.y + thing.height / 2;
+                ctx.globalAlpha = thing.opacity;
+                ctx.setTransform(
+                    Math.cos(thing.rad),
+                    Math.sin(thing.rad),
+                    -Math.sin(thing.rad),
+                    Math.cos(thing.rad),
+                    cx - cx * Math.cos(thing.rad) + cy * Math.sin(thing.rad),
+                    cy - cx * Math.sin(thing.rad) - cy * Math.cos(thing.rad)
+                );
+                ctx.drawImage(image, thing.x, thing.y, thing.width, thing.height);
+                ctx.restore();
+            });
+        }
+
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            drawThings();
+        }
+
+
+        function update() {
+            things.map((thing) => {
+                var dist = Math.sqrt((thing.x - mouse.x) ** 2 + (thing.y - mouse.y) ** 2);
+
+                if (dist < minDist) {
+                    var force = minDist / (dist * dist),
+                        xcomp = (mouse.x - thing.x) / dist,
+                        ycomp = (mouse.y - thing.y) / dist,
+                        deltaV = force * 2; // deplay when hover mouse
+
+                    thing.vX -= deltaV * xcomp;
+                    thing.vY -= deltaV * ycomp;
+
+                    if (thing.d * xcomp > 0) {
+                        thing.d = 0 - thing.d;
+                    }
+                } else {
+                    thing.vX *= .98;
+
+                    if (thing.vY < thing.speed) {
+                        thing.vY = thing.speed
+                    }
+
+                    thing.vX += Math.cos(thing.step += (Math.random() * 0.05)) * thing.stepSize;
+                }
+
+                thing.y += thing.vY;
+                thing.x += thing.vX + thing.d;
+
+                var _angle = Math.random() + 0.2;
+                // stuff.angle += _angle;
+                if (thing._ratate == 0) {
+                    thing.angle += _angle;
+                } else {
+                    thing.angle -= _angle;
+                }
+
+                if (thing.y > canvas.height) {
+                    reset(thing);
+                }
+
+                if (thing.x > canvas.width || thing.x < (0 - thing.width)) {
+                    reset(thing);
+                }
+            });
+        }
+
+        canvas.addEventListener('mousemove', function (e) {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
+        });
+
+
+        function reset(thing) {
+            thing.width = Math.floor(Math.random() * 20) + 20;
+            thing.height = image.naturalHeight / image.naturalWidth * thing.width;
+            thing.x = Math.floor(Math.random() * canvas.width);
+            thing.y = 0 - thing.height;
+            thing.speed = Math.floor(Math.random() * 2) + 0.5
+            thing.vY = thing.speed;
+            thing.vX = 0;
+            // thing.angle = 0;
+            // thing.rad = 0;
+            thing._ratate = Math.floor(Math.random());
+        }
+
+        function tick() {
+            draw();
+            update();
+            requestAnimationFrame(tick);
+        }
+
+        tick();
+    </script>
+</body>
+
+</html>
